@@ -1,15 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Gestor de Tareas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
     <img src="https://picsum.photos/seed/tareas/80/80" alt="Icono de mi gestor de tareas">
-    <h1>Mi Gestor de Tareas</h1>
+    <h1 id="app-titulo">Mi Gestor de Tareas</h1>
     <p>Organiza lo que tienes que hacer</p>
   </header>
 
@@ -24,46 +26,46 @@
   <main>
 
     <section id="nueva">
-        <h2>Agregar una tarea</h2>
+      <h2>Agregar una tarea</h2>
 
- <form>
-     <label for="titulo">Título:</label>
-     <input type="text" id="titulo" name="titulo" required>
+      <form>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
 
-     <br><br>
+        <br><br>
 
-     <label for="descripcion">Descripción:</label>
-     <textarea id="descripcion" name="descripcion"></textarea>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion"></textarea>
 
-    <br><br>
+        <br><br>
 
-    <label for="categoria">Categoría:</label>
-    <select id="categoria" name="categoria">
-      <option value="estudio">Estudio</option>
-      <option value="casa">Casa</option>
-      <option value="deporte">Deporte</option>
-      <option value="otro">Otro</option>
-    </select>
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria">
+          <option value="estudio">Estudio</option>
+          <option value="casa">Casa</option>
+          <option value="deporte">Deporte</option>
+          <option value="otro">Otro</option>
+        </select>
 
-    <br><br>
+        <br><br>
 
-    <p>Estado:</p>
+        <p>Estado:</p>
 
-    <input type="radio" id="pendiente" name="estado" value="pendiente">
-    <label for="pendiente">Pendiente</label>
+        <input type="radio" id="pendiente" name="estado" value="pendiente">
+        <label for="pendiente">Pendiente</label>
 
-    <input type="radio" id="completada" name="estado" value="completada">
-    <label for="completada">Completada</label>
+        <input type="radio" id="completada" name="estado" value="completada">
+        <label for="completada">Completada</label>
 
-    <br><br>
+        <br><br>
 
-    <label for="fecha">Fecha:</label>
-    <input type="date" id="fecha" name="fecha">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha">
 
-    <br><br>
+        <br><br>
 
         <button type="submit">Agregar tarea</button>
-       </form>
+      </form>
     </section>
 
     <section id="lista">
@@ -79,19 +81,19 @@
         </thead>
 
         <tbody>
-          <tr>
+          <tr class="tarea">
             <td>Terminar la tarea de matemáticas</td>
             <td>Estudio</td>
             <td>Pendiente</td>
           </tr>
 
-          <tr>
+          <tr class="tarea">
             <td>Lavar los platos</td>
             <td>Casa</td>
             <td>Completada</td>
           </tr>
 
-          <tr>
+          <tr class="tarea">
             <td>Leer el capítulo del libro</td>
             <td>Lectura</td>
             <td>En progreso</td>
